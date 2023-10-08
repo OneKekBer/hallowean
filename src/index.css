@@ -20,6 +20,10 @@ body {
   font-family: "Druk Text Bold Trial";
 }
 
+.hero {
+  background-image: url('./assets/bg.png');
+}
+
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
