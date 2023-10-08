@@ -2,15 +2,16 @@ import Header from "./common/Header";
 import Hero from "./components/Hero";
 import { Programa } from "./components/Programa";
 import Tariff from "./components/Tariff";
+import Footer from "./common/Footer";
 
 function App() {
    return (
-      <div className="text-white">
+      <div className="text-white text-center md:text-start">
          <Header />
          <Hero />
          <Programa />
          <Tariff />
-         <div className="underline"></div>
+         <Footer />
       </div>
    );
 }

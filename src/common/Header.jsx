@@ -1,4 +1,7 @@
+import menu from "./../assets/menu.png";
+import { useState } from "react";
 const Header = () => {
+   const [isMenuOpen, setIsMenuOpen] = useState(false);
    return (
       <div className="bg-darkViolet">
          <div className="wrapper text-grey ">
@@ -10,7 +13,14 @@ const Header = () => {
                   <li>Тарифы</li>
                   <li>Связаться со мной</li>
                </ul>
-               <div className="flex md:hidden">menu button</div>
+               <div
+                  onClick={() => {
+                     setIsMenuOpen(!isMenuOpen);
+                  }}
+                  className="flex md:hidden"
+               >
+                  <img src={menu} alt="" />
+               </div>
             </div>
          </div>
       </div>

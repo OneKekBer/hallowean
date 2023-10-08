@@ -26,7 +26,7 @@ export const Programa = () => {
    const swiperRef = useRef();
 
    return (
-      <div className="program bg-violet">
+      <div id="Programa" className="program bg-violet pb-[20vh]">
          <div className="wrapper">
             <h1 className="text-xl">Программа</h1>
             <p className="text-center text-lg ">
@@ -114,7 +114,7 @@ export const Programa = () => {
                   loop={true}
                   slidesPerView={1}
                   pagination={{ clickable: true }}
-                  className="swiper h-[60vh] relative mt-10 rounded-lg "
+                  className="swiper h-[70vh] relative mt-10 rounded-lg "
                   onBeforeInit={(swiper) => {
                      swiperRef.current = swiper;
                   }}

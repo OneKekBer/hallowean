@@ -5,6 +5,7 @@ import Button from "../common/Button";
 const Hero = () => {
    return (
       <div
+         id="Hero"
          className={`hero min-h-[90vh] text-center gap-5  bg-no-repeat bg-cover `}
          // style={{ backgroundImage: bg_hero, backgroundRepeat: "no-repeat" }}
       >

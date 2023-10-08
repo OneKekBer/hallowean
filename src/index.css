@@ -21,6 +21,7 @@ body {
   padding: 0;
   font-family: "Druk Text Bold Trial";
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .droid {
@@ -42,6 +43,21 @@ body {
 .swiper .swiper-pagination-bullet-active {
   background-color: #FF7A00;
 
+}
+
+.btn-pum {
+  box-shadow: 1px -1px 107px 8px rgba(255, 122, 0, 0.75);
+
+}
+
+.yellow-box {
+  box-shadow: -1px 2px 79px 7px rgba(255, 236, 68, 0.75);
+  -webkit-box-shadow: -1px 2px 79px 7px rgba(255, 236, 68, 0.75);
+  -moz-box-shadow: -1px 2px 79px 7px rgba(255, 236, 68, 0.75);
+}
+
+.tarif {
+  background-image: url('./assets/tarif_bg.png');
 }
 
 .program {

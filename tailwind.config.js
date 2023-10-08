@@ -3,10 +3,11 @@ export default {
    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
    theme: {
       fontSize: {
-         xl: "clamp(64px, 15vw, 90px)",
-         lg: "40px",
-         md: "clamp(12px, 15vw, 28px)",
-         sm: "18px",
+         tarif: "clamp(6px, 5vw, 24px)",
+         xl: "clamp(64px, 8vw, 90px)",
+         lg: "clamp(30px, 8vw, 40px)",
+         md: "clamp(12px, 8vw, 28px)",
+         sm: "clamp(10px, 8vw, 18px)",
       },
       extend: {
          colors: {
@@ -14,6 +15,7 @@ export default {
             darkViolet: "#22182B",
             grey: "#C5C3C3",
             pumpkin: "#FF7A00",
+            yellow: "#FFEC44",
          },
       },
    },
