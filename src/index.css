@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(https://db.onlinewebfonts.com/c/5b0ba2e20d3d7e3fc30b60595f3702c2?family=Druk+Text+Bold+Trial);
+
+@font-face {
+  font-family: "Druk Text Bold Trial";
+  src: url("https://db.onlinewebfonts.com/t/5b0ba2e20d3d7e3fc30b60595f3702c2.eot");
+  src: url("https://db.onlinewebfonts.com/t/5b0ba2e20d3d7e3fc30b60595f3702c2.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/5b0ba2e20d3d7e3fc30b60595f3702c2.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/5b0ba2e20d3d7e3fc30b60595f3702c2.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/5b0ba2e20d3d7e3fc30b60595f3702c2.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/5b0ba2e20d3d7e3fc30b60595f3702c2.svg#Druk Text Bold Trial")format("svg");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Druk Text Bold Trial";
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+ul {
+  list-style: none;
+}
