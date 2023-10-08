@@ -14,7 +14,7 @@ import ProgramaSwiper from "./ProgramaSwiper";
 
 export const Programa = () => {
    return (
-      <div id="Programa" className="program bg-violet py-[10vh] pb-[20vh]">
+      <div id="Programa" className="program bg-violet py-[10vh] pb-[10vh]">
          <div className="wrapper relative">
             <h1 className="text-xl relative">
                Программа
