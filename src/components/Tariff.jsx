@@ -10,6 +10,9 @@ import boo from "../assets/boo.png";
 import arrow from "../assets/arrow.png";
 import down_arrow from "../assets/down_arrow.png";
 import TariffComponents from "./TarrifComponents";
+import Reveal from "../common/Reveal";
+import { slideFromRight } from "../constants/motion";
+import { slideFromLeft } from "./../constants/motion";
 const Tariff = () => {
    // const tariffs = [
    //    {
@@ -79,72 +82,19 @@ const Tariff = () => {
          className="bg-violet tarif bg-no-repeat bg-cover bg-center py-[5vh]"
       >
          <div className="wrapper">
-            <h1 className="text-xl relative">
-               Программа
-               <div className="absolute left-10 -top-10 md:-top-[90px] text-ultra opacity-30">
+            <Reveal duration={1.5} variants={slideFromRight(-500)}>
+               <h1 className="text-xl relative">
                   Программа
-               </div>
-            </h1>
-            <p className="text-center text-lg droid mb-[5vh]">
-               В эту таинственную ночь мы предлагаем вам следующие невероятные
-               варианты размещения
-            </p>
+                  <div className="absolute left-10 -top-10 md:-top-[90px] text-ultra opacity-30">
+                     Программа
+                  </div>
+               </h1>
+               <p className="text-center text-lg droid mb-[5vh]">
+                  В эту таинственную ночь мы предлагаем вам следующие
+                  невероятные варианты размещения
+               </p>
+            </Reveal>
             <div className="flex droid flex-col">
-               {/* <div className="flex flex-col items-center justify-center gap-[100px]">
-                  {tariffs.map((item, index) => {
-                     return (
-                        <div
-                           key={index}
-                           className="bg-pumpkin rounded-[16px] p-[2%]  max-w-[1000px] relative"
-                        >
-                           <div className="absolute -left-5 -top-15 text-xl">
-                              0{index + 1}
-                           </div>
-                           <h1 className="text-center text-lg font-bold text-violet">
-                              {item.title}
-                           </h1>
-                           <div className="border flex-col md:flex-row mb-[2%] border-violet mx-5 p-5  border-solid rounded-lg flex justify-between">
-                              <div className="text-tarif">
-                                 <p className="">{item.people}</p>
-                                 <p className="">{item.loaction}</p>
-                                 <div className="ml-[10%]">
-                                    <h2 className="font-bold text-violet">
-                                       Что включено
-                                    </h2>
-                                    <ul className="list-disc">
-                                       {item.inclide.map((item, index) => (
-                                          <li key={index}>{item}</li>
-                                       ))}
-                                    </ul>
-                                 </div>
-                              </div>
-                              <div className="flex items-center justify-center">
-                                 <div className="rotate-0 md:rotate-90 text-xl font-bold">
-                                    {item.num}
-                                 </div>
-                              </div>
-                           </div>
-                           <div className="absolute top-1/2 transform -translate-y-1/2 z-10 -right-4">
-                              <img
-                                 src={item.img}
-                                 className="w-[90px] h-[90px] md:w-[140px] md:h-[140px]"
-                                 alt=""
-                              />
-                           </div>
-                           <div>
-                              <img
-                                 className="absolute -bottom-10 rotate-45 -left-10 w-[170px] h-[140px]"
-                                 src={bat}
-                                 alt=""
-                              />
-                           </div>
-                           <Button className="absolute right-0 bg-darkViolet text-pumpkin -bottom-5">
-                              Забронировать место
-                           </Button>
-                        </div>
-                     );
-                  })}
-               </div> */}
                <TariffComponents />
             </div>
             <div className="flex flex-col items-center justify-center">
@@ -180,27 +130,30 @@ const Tariff = () => {
                <img src={down_arrow} className="w-7 h-7" alt="" />
             </Button>
             <div className="w-full relative flex items-center text-center justify-center">
-               <div className="form relative bg-darkViolet p-[5%] rounded-[16px] shadow-2xl  w-[550px] h-[550px] text-center">
-                  <div className="text-md mb-5 droid">
-                     Оставьте свои данные, и мы обязательно свяжемся с вами
+               <Reveal duration={1.5} variants={slideFromLeft()}>
+                  <div className="form relative bg-darkViolet p-[5%] rounded-[16px] shadow-2xl  w-[550px] h-[550px] text-center">
+                     <div className="text-md mb-5 droid">
+                        Оставьте свои данные, и мы обязательно свяжемся с вами
+                     </div>
+                     <form className="droid" action="">
+                        <input
+                           type="text"
+                           placeholder="Имя"
+                           className="rounded-[20px] p-2 mb-5 text-black h-[50px] w-full bg-grey"
+                        />
+                        <input
+                           type="text"
+                           placeholder="Телефон"
+                           className="rounded-[20px] p-2 text-black h-[50px] w-full bg-grey"
+                        />
+                        <Button className="bg-pumpkin w-1/2 h-[40px] mx-auto btn-pum text-white">
+                           Отправить
+                           <img src={arrow} className="w-9 h-5" alt="" />
+                        </Button>
+                     </form>
                   </div>
-                  <form className="droid" action="">
-                     <input
-                        type="text"
-                        placeholder="Имя"
-                        className="rounded-[20px] p-2 mb-5 text-black h-[50px] w-full bg-grey"
-                     />
-                     <input
-                        type="text"
-                        placeholder="Телефон"
-                        className="rounded-[20px] p-2 text-black h-[50px] w-full bg-grey"
-                     />
-                     <Button className="bg-pumpkin w-1/2 h-[40px] mx-auto btn-pum text-white">
-                        Отправить
-                        <img src={arrow} className="w-9 h-5" alt="" />
-                     </Button>
-                  </form>
-               </div>
+               </Reveal>
+
                <img src={boo} className="absolute right-0 -bottom-20" alt="" />
             </div>
          </div>

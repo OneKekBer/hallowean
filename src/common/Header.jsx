@@ -2,6 +2,8 @@ import menu from "./../assets/menu.png";
 import close from "./../assets/close.png";
 
 import { AnimatePresence, motion } from "framer-motion";
+import Reveal from "./Reveal";
+import { opacity } from "../constants/motion";
 
 const menuVars = {
    initial: {
@@ -12,7 +14,7 @@ const menuVars = {
       opacity: 1,
       transition: {
          duration: 0.5,
-         staggerChildren: 0.2,
+         staggerChildren: 0.35,
       },
    },
 
@@ -34,7 +36,7 @@ const navVars = {
       opacity: 1,
       // y: 0,
       transition: {
-         duration: 0.3,
+         duration: 0.5,
       },
    },
 
@@ -90,21 +92,23 @@ const Header = ({ toggleMenu, isMenuOpen }) => {
                      </motion.div>
                   </div>
                )}
-               <div className="flex  py-5 justify-between">
-                  <div>Икша Кантри клуб</div>
-                  <ul className="md:flex hidden gap-10">
-                     {links.map((link, i) => {
-                        return (
-                           <li key={i}>
-                              <a href={link.link}>{link.title}</a>
-                           </li>
-                        );
-                     })}
-                  </ul>
-                  <div onClick={toggleMenu} className="flex md:hidden">
-                     <img src={menu} alt="" />
+               <Reveal duration={2} variants={opacity()}>
+                  <div className="flex  py-5 justify-between">
+                     <div>Икша Кантри клуб</div>
+                     <ul className="md:flex hidden gap-10">
+                        {links.map((link, i) => {
+                           return (
+                              <li key={i}>
+                                 <a href={link.link}>{link.title}</a>
+                              </li>
+                           );
+                        })}
+                     </ul>
+                     <div onClick={toggleMenu} className="flex md:hidden">
+                        <img src={menu} alt="" />
+                     </div>
                   </div>
-               </div>
+               </Reveal>
             </div>
          </AnimatePresence>
       </div>

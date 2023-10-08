@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
@@ -6,7 +7,12 @@ const variant = {
    visible: { opacity: 1, y: 0 },
 };
 // eslint-disable-next-line react/prop-types
-export const Reveal = ({ children, delay = 0.25, variants = variant }) => {
+export const Reveal = ({
+   children,
+   delay = 0.25,
+   duration = 0.5,
+   variants = variant,
+}) => {
    const ref = useRef(null);
    const isInView = useInView(ref, { once: true });
    const animation = useAnimation();
@@ -28,7 +34,7 @@ export const Reveal = ({ children, delay = 0.25, variants = variant }) => {
             // }}
             initial="hidden"
             animate={animation}
-            transition={{ duration: 0.5, delay: delay }}
+            transition={{ duration: duration, delay: delay }}
          >
             {children}
          </motion.div>

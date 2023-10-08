@@ -16,7 +16,7 @@ const slideVariants = {
 const Footer = () => {
    return (
       <div className="bg-darkViolet droid">
-         <div className="wrapper mt-10 text-grey ">
+         <div className="wrapper mt-20 text-grey ">
             <div className="flex gap-5 py-5 justify-between">
                <div className="flex w-full items-center justify-between md:justify-start gap-5">
                   <div>Икша Кантри клуб 2023 </div>
@@ -28,7 +28,7 @@ const Footer = () => {
                      >
                         <img className="w-9 h-9 z-10" src={inst} alt="" />
                      </a>
-                     <a href="tel:+7 985 909‑12‑02">
+                     <a href="tel:+7 (499) 505-50-31">
                         <img className="w-9 h-9 z-10" src={what} alt="" />
                      </a>
                      <motion.a
