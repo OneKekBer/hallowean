@@ -87,7 +87,7 @@ export const Programa = () => {
                         взрослых и шоу Зомби-бал. Костюмированный конкурс и
                         раздача призов
                      </h2>
-                     <Reveal variants={scale()}>
+                     <Reveal delay={0.5} variants={scale()}>
                         <img
                            src={bat}
                            className="absolute scale-50 -rotate-90 -bottom-[150px] -right-[20%] "
