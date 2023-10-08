@@ -26,8 +26,11 @@ export const Programa = () => {
    const swiperRef = useRef();
 
    return (
-      <div id="Programa" className="program bg-violet pb-[20vh]">
-         <div className="wrapper">
+      <div id="Programa" className="program bg-violet py-[10vh] pb-[20vh]">
+         <div className="wrapper relative">
+            <div className="absolute left-10 -top-[4%] text-[120px] opacity-30">
+               Программа
+            </div>
             <h1 className="text-xl">Программа</h1>
             <p className="text-center text-lg ">
                Программа для празднования Хэллоуина в загородном клубе Икша

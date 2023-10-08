@@ -1,74 +1,75 @@
 import Button from "./../common/Button";
-import bat from "../assets/bat.png";
-import cat from "../assets/cat.png";
-import spooky from "../assets/spooky.png";
-import candy from "../assets/candy.png";
-import hat from "../assets/hat.png";
-import spooky2 from "../assets/spooky2.png";
+// import bat from "../assets/bat.png";
+// import cat from "../assets/cat.png";
+// import spooky from "../assets/spooky.png";
+// import candy from "../assets/candy.png";
+// import hat from "../assets/hat.png";
+// import spooky2 from "../assets/spooky2.png";
 import food from "../assets/food.png";
 import boo from "../assets/boo.png";
+import TariffComponents from "./TarrifComponents";
 const Tariff = () => {
-   const tariffs = [
-      {
-         title: "Тариф Волшебные Олимпийские",
-         people: "2-6 человек",
-         loaction: "Локация: Олимпийская деревня",
-         inclide: [
-            "Проживание с 27 по 29",
-            "Проживаниес 28 по 30",
-            "Торжественный ужин, участие во всех мероприятиях",
-         ],
-         num: "46,000",
-         img: cat,
-      },
-      {
-         title: "Тариф Шале Чародеев",
-         people: "6-10 человек",
-         loaction: "Локация:  Шале",
-         inclide: [
-            "Проживание  27, 28 ИЛИ 29 октября",
-            "Торжественный ужин, участие во всех мероприятиях",
-         ],
-         num: "55,000",
-         img: candy,
-      },
-      {
-         title: "Тариф Коттеджные Заклинатели",
-         people: "6-10 человек",
-         loaction: "Локация:  Коттедж",
-         inclide: [
-            "Проживание с 27 по 29",
-            "Проживаниес 28 по 30",
-            "Торжественный ужин, участие во всех мероприятиях",
-         ],
-         num: "70,000",
-         img: hat,
-      },
-      {
-         title: "Тариф Лесные Ведьмы",
-         loaction: "Локация:  Лесная Резиденция   ",
-         people: "6-10 человек",
-         inclide: [
-            "Проживание с 27 по 29",
-            "Проживание с 28 по 30",
-            "Торжественный ужин, участие во всех мероприятиях",
-         ],
-         num: "75,000",
-         img: spooky,
-      },
-      {
-         title: "Тариф  Дуплекс Загадок",
-         people: "6-10 человек",
-         loaction: "Локация:  Дуплекс",
-         inclide: [
-            "Проживание с 27 по 29",
-            "Проживание с 28 по 30",
-            "Торжественный ужин, участие во всех мероприятиях",
-         ],
-         num: "82,600",
-         img: spooky2,
-      },
-   ];
+   // const tariffs = [
+   //    {
+   //       title: "Тариф Волшебные Олимпийские",
+   //       people: "2-6 человек",
+   //       loaction: "Локация: Олимпийская деревня",
+   //       inclide: [
+   //          "Проживание с 27 по 29",
+   //          "Проживаниес 28 по 30",
+   //          "Торжественный ужин, участие во всех мероприятиях",
+   //       ],
+   //       num: "46,000",
+   //       img: cat,
+   //    },
+   //    {
+   //       title: "Тариф Шале Чародеев",
+   //       people: "6-10 человек",
+   //       loaction: "Локация:  Шале",
+   //       inclide: [
+   //          "Проживание  27, 28 ИЛИ 29 октября",
+   //          "Торжественный ужин, участие во всех мероприятиях",
+   //       ],
+   //       num: "55,000",
+   //       img: candy,
+   //    },
+   //    {
+   //       title: "Тариф Коттеджные Заклинатели",
+   //       people: "6-10 человек",
+   //       loaction: "Локация:  Коттедж",
+   //       inclide: [
+   //          "Проживание с 27 по 29",
+   //          "Проживаниес 28 по 30",
+   //          "Торжественный ужин, участие во всех мероприятиях",
+   //       ],
+   //       num: "70,000",
+   //       img: hat,
+   //    },
+   //    {
+   //       title: "Тариф Лесные Ведьмы",
+   //       loaction: "Локация:  Лесная Резиденция   ",
+   //       people: "6-10 человек",
+   //       inclide: [
+   //          "Проживание с 27 по 29",
+   //          "Проживание с 28 по 30",
+   //          "Торжественный ужин, участие во всех мероприятиях",
+   //       ],
+   //       num: "75,000",
+   //       img: spooky,
+   //    },
+   //    {
+   //       title: "Тариф  Дуплекс Загадок",
+   //       people: "6-10 человек",
+   //       loaction: "Локация:  Дуплекс",
+   //       inclide: [
+   //          "Проживание с 27 по 29",
+   //          "Проживание с 28 по 30",
+   //          "Торжественный ужин, участие во всех мероприятиях",
+   //       ],
+   //       num: "82,600",
+   //       img: spooky2,
+   //    },
+   // ];
 
    return (
       <div
@@ -82,7 +83,7 @@ const Tariff = () => {
                варианты размещения
             </p>
             <div className="flex droid flex-col">
-               <div className="flex flex-col items-center justify-center gap-[100px]">
+               {/* <div className="flex flex-col items-center justify-center gap-[100px]">
                   {tariffs.map((item, index) => {
                      return (
                         <div
@@ -136,16 +137,17 @@ const Tariff = () => {
                         </div>
                      );
                   })}
-               </div>
+               </div> */}
+               <TariffComponents />
             </div>
             <div className="flex flex-col items-center justify-center">
-               <div className="bg-yellow w-full  box-border mt-[10vh] droid p-[5%] yellow-box text-lg shadow-xl flex flex-col md:flex-row justify-between rounded-[16px] min-h-[200px]">
+               <div className="bg-yellow w-full  box-border mt-[10vh] droid p-[5%] yellow-box text-tarif shadow-xl flex flex-col md:flex-row justify-between rounded-[16px] min-h-[200px]">
                   <div className="">
                      <h1 className="text-black font-bold">
                         Вы можете добавить дополнительное
                         <br /> питание к любому тарифу
                      </h1>
-                     <p className="text-violet text-md font-bold ">
+                     <p className="text-violet text-tarif font-bold ">
                         Во все локации можно добавить
                         <br /> дополнительного гостя за 2000 (без спального
                         места)
