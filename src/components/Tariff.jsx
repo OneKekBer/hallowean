@@ -130,29 +130,29 @@ const Tariff = () => {
                <img src={down_arrow} className="w-7 h-7" alt="" />
             </Button>
             <div className="w-full relative flex items-center text-center justify-center">
-               <Reveal duration={1.5} variants={slideFromLeft()}>
-                  <div className="form relative bg-darkViolet p-[5%] rounded-[16px] shadow-2xl  w-[550px] h-[550px] text-center">
-                     <div className="text-md mb-5 droid">
-                        Оставьте свои данные, и мы обязательно свяжемся с вами
-                     </div>
-                     <form className="droid" action="">
-                        <input
-                           type="text"
-                           placeholder="Имя"
-                           className="rounded-[20px] p-2 mb-5 text-black h-[50px] w-full bg-grey"
-                        />
-                        <input
-                           type="text"
-                           placeholder="Телефон"
-                           className="rounded-[20px] p-2 text-black h-[50px] w-full bg-grey"
-                        />
-                        <Button className="bg-pumpkin w-1/2 h-[40px] mx-auto btn-pum text-white">
-                           Отправить
-                           <img src={arrow} className="w-9 h-5" alt="" />
-                        </Button>
-                     </form>
+               {/* <Reveal duration={1.5} variants={slideFromLeft()}> */}
+               <div className="form relative bg-darkViolet p-[5%] rounded-[16px] shadow-2xl  w-[550px] h-[550px] text-center">
+                  <div className="text-md mb-5 droid">
+                     Оставьте свои данные, и мы обязательно свяжемся с вами
                   </div>
-               </Reveal>
+                  <form className="droid" action="">
+                     <input
+                        type="text"
+                        placeholder="Имя"
+                        className="rounded-[20px] p-2 mb-5 text-black h-[50px] w-full bg-grey"
+                     />
+                     <input
+                        type="text"
+                        placeholder="Телефон"
+                        className="rounded-[20px] p-2 text-black h-[50px] w-full bg-grey"
+                     />
+                     <Button className="bg-pumpkin w-1/2 h-[40px] mx-auto btn-pum text-white">
+                        Отправить
+                        <img src={arrow} className="w-9 h-5" alt="" />
+                     </Button>
+                  </form>
+               </div>
+               {/* </Reveal> */}
 
                <img src={boo} className="absolute right-0 -bottom-20" alt="" />
             </div>
