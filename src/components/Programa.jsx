@@ -98,7 +98,7 @@ export const Programa = () => {
             </Button>
             <Button className="bg-pumpkin mx-auto text-darkViolet">
                Посмотреть тарифы
-               <img src={down_arrow} className="w-9 h-9" alt="" />
+               <img src={down_arrow} className="w-6 h-8" alt="" />
             </Button>
          </div>
       </div>
