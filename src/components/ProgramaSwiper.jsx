@@ -14,7 +14,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const ProgramaSwiper = () => {
    const swiperRef = useRef();
    return (
-      <div className="my-[10vh]">
+      <div className="my-[10vh] border-y-2 py-5 border-pumpkin">
          <Swiper
             // install Swiper modules
             modules={[Pagination, Navigation]}
@@ -22,7 +22,7 @@ const ProgramaSwiper = () => {
             loop={true}
             slidesPerView={1}
             pagination={{ clickable: true }}
-            className="swiper h-[70vh] relative mt-10 rounded-lg "
+            className="swiper aspect-video relative mt-10 rounded-lg "
             onBeforeInit={(swiper) => {
                swiperRef.current = swiper;
             }}

@@ -13,7 +13,7 @@ function App() {
    return (
       <div className="text-white ">
          <Header toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
-         <div className={`${isMenuOpen ? "blur-xl" : ""}`}>
+         <div className={`${isMenuOpen ? "blur-sm" : ""}`}>
             <Hero />
             <Programa />
             <Tariff />
