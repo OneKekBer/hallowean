@@ -3,7 +3,7 @@ import what from "./../assets/what.png";
 
 const Footer = () => {
    return (
-      <div className="bg-darkViolet">
+      <div className="bg-darkViolet droid">
          <div className="wrapper text-grey ">
             <div className="flex gap-5 py-5 justify-between">
                <div className="flex w-full items-center justify-between md:justify-start gap-5">
