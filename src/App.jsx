@@ -1,6 +1,7 @@
 import Header from "./common/Header";
 import Hero from "./components/Hero";
 import { Programa } from "./components/Programa";
+import Tariff from "./components/Tariff";
 
 function App() {
    return (
@@ -8,6 +9,7 @@ function App() {
          <Header />
          <Hero />
          <Programa />
+         <Tariff />
          <div className="underline"></div>
       </div>
    );
