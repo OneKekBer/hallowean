@@ -12,6 +12,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import ProgramaSwiper from "./ProgramaSwiper";
 import Reveal from "../common/Reveal";
+import { scale } from "../constants/motion";
 
 export const Programa = () => {
    return (
@@ -52,7 +53,7 @@ export const Programa = () => {
                         проведут игры и развлечения для детей, включая охоту за
                         сладостями и конкурс на лучший детский костюм
                      </h2>
-                     <Reveal scale={0.5}>
+                     <Reveal variants={scale()}>
                         <img
                            src={bat}
                            className="absolute -bottom-[150px] -right-[20%] "
@@ -86,7 +87,7 @@ export const Programa = () => {
                         взрослых и шоу Зомби-бал. Костюмированный конкурс и
                         раздача призов
                      </h2>
-                     <Reveal scale={0.6}>
+                     <Reveal variants={scale()}>
                         <img
                            src={bat}
                            className="absolute scale-50 -rotate-90 -bottom-[150px] -right-[20%] "
