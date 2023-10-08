@@ -25,10 +25,19 @@ body {
 }
 
 .wrapper {
-  max-width: 1440px;
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 20PX;
+
 }
 
+.program {
+  background-image: url('./assets/program_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
 
 ul {
   list-style: none;

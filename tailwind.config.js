@@ -10,6 +10,7 @@ export default {
       },
       extend: {
          colors: {
+            violet: "#412E52",
             darkViolet: "#22182B",
             grey: "#C5C3C3",
             pumpkin: "#FF7A00",
