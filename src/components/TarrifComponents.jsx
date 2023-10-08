@@ -12,7 +12,7 @@ function TariffComponents() {
       <div className="flex flex-col items-center justify-center gap-[100px]">
          {/* Блок 1 */}
          <div className="bg-pumpkin place-self-start rounded-[16px] p-[2%] max-w-[1000px] relative">
-            <div className="absolute -left-5 -top-15 text-xl">01</div>
+            <div className="absolute -left-5 -top-5 md:-top-10 text-xl">01</div>
             <h1 className="text-center text-lg font-bold text-violet">
                Тариф Волшебные Олимпийские
             </h1>
@@ -46,12 +46,12 @@ function TariffComponents() {
             </div>
             <div>
                <img
-                  className="absolute -bottom-10 rotate-45 -left-10 w-[170px] h-[140px]"
+                  className="absolute -bottom-10 rotate-45 -left-10 h-[70px] w-[90px] md:w-[170px] md:h-[140px] "
                   src={bat}
                   alt=""
                />
             </div>
-            <Button className=" absolute right-0 bg-darkViolet text-pumpkin -bottom-5">
+            <Button className="absolute right-0 bg-darkViolet text-pumpkin -bottom-5">
                Забронировать место
                <img src={arrow} className="w-9 h-5" alt="" />
             </Button>
@@ -59,7 +59,7 @@ function TariffComponents() {
 
          {/* Блок 2 */}
          <div className="bg-pumpkin place-self-end rounded-[16px] p-[2%] max-w-[1000px] relative">
-            <div className="absolute -left-5 -top-15 text-xl">02</div>
+            <div className="absolute -left-5 -top-5 md:-top-10 text-xl">02</div>
             <h1 className="text-center text-lg font-bold text-violet">
                Тариф Шале Чародеев
             </h1>
@@ -92,12 +92,12 @@ function TariffComponents() {
             </div>
             <div>
                <img
-                  className="absolute -top-10 rotate-180 -right-10 w-[170px] h-[140px]"
+                  className="absolute -top-10 rotate-180 -right-10 h-[70px] w-[90px] md:w-[170px] md:h-[140px] "
                   src={bat}
                   alt=""
                />
             </div>
-            <Button className=" absolute right-0 bg-darkViolet text-pumpkin -bottom-5">
+            <Button className="absolute right-0 bg-darkViolet text-pumpkin -bottom-5">
                Забронировать место
                <img src={arrow} className="w-9 h-5" alt="" />
             </Button>
@@ -105,7 +105,7 @@ function TariffComponents() {
 
          {/* Блок 3 */}
          <div className="bg-pumpkin place-self-start rounded-[16px] p-[2%] max-w-[1000px] relative">
-            <div className="absolute -left-5 -top-15 text-xl">03</div>
+            <div className="absolute -left-5 -top-5 md:-top-10 text-xl">03</div>
             <h1 className="text-center text-lg font-bold text-violet">
                Тариф Коттеджные Заклинатели
             </h1>
@@ -139,12 +139,12 @@ function TariffComponents() {
             </div>
             <div>
                <img
-                  className="absolute top-20 rotate-45 -left-10 w-[170px] h-[140px]"
+                  className="absolute top-20 rotate-45 -left-10 h-[70px] w-[90px] md:w-[170px] md:h-[140px] "
                   src={bat}
                   alt=""
                />
             </div>
-            <Button className=" absolute right-0 bg-darkViolet text-pumpkin -bottom-5">
+            <Button className="absolute right-0 bg-darkViolet text-pumpkin -bottom-5">
                Забронировать место
                <img src={arrow} className="w-9 h-5" alt="" />
             </Button>
@@ -152,7 +152,7 @@ function TariffComponents() {
 
          {/* Блок 4 */}
          <div className="bg-pumpkin place-self-end rounded-[16px] p-[2%] max-w-[1000px] relative">
-            <div className="absolute -left-5 -top-15 text-xl">04</div>
+            <div className="absolute -left-5 -top-5 md:-top-10 text-xl">04</div>
             <h1 className="text-center text-lg font-bold text-violet">
                Тариф Лесные Ведьмы
             </h1>
@@ -186,12 +186,12 @@ function TariffComponents() {
             </div>
             <div>
                <img
-                  className="absolute -top-10  -right-10 w-[170px] h-[140px]"
+                  className="absolute -top-10  -right-10 h-[70px] w-[90px] md:w-[170px] md:h-[140px] "
                   src={bat}
                   alt=""
                />
             </div>
-            <Button className=" absolute right-0 bg-darkViolet text-pumpkin -bottom-5">
+            <Button className="absolute right-0 bg-darkViolet text-pumpkin -bottom-5">
                Забронировать место
                <img src={arrow} className="w-9 h-5" alt="" />
             </Button>
@@ -199,7 +199,7 @@ function TariffComponents() {
 
          {/* Блок 5 */}
          <div className="bg-pumpkin place-self-start rounded-[16px] p-[2%] max-w-[1000px] relative">
-            <div className="absolute -left-5 -top-15 text-xl">05</div>
+            <div className="absolute -left-5 -top-5 md:-top-10 text-xl">05</div>
             <h1 className="text-center text-lg font-bold text-violet">
                Тариф Дуплекс Загадок
             </h1>
@@ -233,12 +233,12 @@ function TariffComponents() {
             </div>
             <div>
                <img
-                  className="absolute -bottom-10 rotate-45 -left-10 w-[170px] h-[140px]"
+                  className="absolute -bottom-10 rotate-45 -left-10 h-[70px] w-[90px] md:w-[170px] md:h-[140px] "
                   src={bat}
                   alt=""
                />
             </div>
-            <Button className=" absolute right-0 bg-darkViolet text-pumpkin -bottom-5">
+            <Button className="absolute right-0 bg-darkViolet text-pumpkin -bottom-5">
                Забронировать место
                <img src={arrow} className="w-9 h-5" alt="" />
             </Button>

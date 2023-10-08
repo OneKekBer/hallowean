@@ -7,6 +7,8 @@ import Button from "./../common/Button";
 // import spooky2 from "../assets/spooky2.png";
 import food from "../assets/food.png";
 import boo from "../assets/boo.png";
+import arrow from "../assets/arrow.png";
+import down_arrow from "../assets/down_arrow.png";
 import TariffComponents from "./TarrifComponents";
 const Tariff = () => {
    // const tariffs = [
@@ -146,7 +148,7 @@ const Tariff = () => {
                <TariffComponents />
             </div>
             <div className="flex flex-col items-center justify-center">
-               <div className="bg-yellow w-full   box-border mt-[10vh] droid p-[5%] yellow-box text-tarif shadow-xl flex  justify-between rounded-[16px] min-h-[200px]">
+               <div className="bg-yellow w-full items-center  box-border mt-[10vh] droid p-[5%] yellow-box text-tarif shadow-xl flex  justify-between rounded-[16px] min-h-[200px]">
                   <div className="">
                      <h1 className="text-black font-bold">
                         Вы можете добавить дополнительное
@@ -173,8 +175,9 @@ const Tariff = () => {
                </div>
                <img src={food} alt="" />
             </div>
-            <Button className="bg-pumpkin btn-pum w-[300px] mb-[10vh] text-white mx-auto">
+            <Button className="bg-pumpkin btn-pum mb-[10vh] text-white mx-auto">
                Оставить заявку
+               <img src={down_arrow} className="w-7 h-7" alt="" />
             </Button>
             <div className="w-full relative flex items-center text-center justify-center">
                <div className="form relative bg-darkViolet p-[5%] rounded-[16px] shadow-2xl  w-[550px] h-[550px] text-center">
@@ -194,6 +197,7 @@ const Tariff = () => {
                      />
                      <Button className="bg-pumpkin w-1/2 h-[40px] mx-auto btn-pum text-white">
                         Отправить
+                        <img src={arrow} className="w-9 h-5" alt="" />
                      </Button>
                   </form>
                </div>
