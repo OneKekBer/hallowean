@@ -8,7 +8,6 @@ import { useState } from "react";
 function App() {
    const [isMenuOpen, setIsMenuOpen] = useState(false);
    const toggleMenu = () => {
-      console.log("clikced");
       setIsMenuOpen((prev) => !prev);
    };
    return (

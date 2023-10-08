@@ -4,7 +4,7 @@ const Button = ({ children, className, onClick, style }) => {
       <div
          style={style}
          onClick={onClick}
-         className={`cursor-pointer text-small px-4 z-10 mt-10 font-bold  w-[270px] gap-1 h-[50px] md:h-[75px] rounded-[100px] flex justify-center hover:opacity-40 duration-300 items-center  ${
+         className={`cursor-pointer droid text-small px-4 z-10 mt-10 font-bold  w-[270px] gap-1 h-[50px] md:h-[75px] rounded-[100px] flex justify-center hover:opacity-40 duration-300 items-center  ${
             className || ""
          } `}
       >

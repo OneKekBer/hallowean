@@ -58,7 +58,7 @@ const Header = ({ toggleMenu, isMenuOpen }) => {
          <AnimatePresence>
             <div className="wrapper  ">
                {isMenuOpen && (
-                  <div className="inset-0 fixed bg-slate-100 z-20 bg-opacity-60 w-full h-full">
+                  <div className="inset-0 flex md:hidden fixed bg-slate-100 z-20 bg-opacity-60 w-full h-full">
                      <motion.div
                         key="menu" // Make sure to specify a unique key
                         variants={menuVars}

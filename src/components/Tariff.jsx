@@ -85,7 +85,7 @@ const Tariff = () => {
                   Программа
                </div>
             </h1>
-            <p className="text-center text-lg mb-[5vh]">
+            <p className="text-center text-lg droid mb-[5vh]">
                В эту таинственную ночь мы предлагаем вам следующие невероятные
                варианты размещения
             </p>
@@ -181,10 +181,10 @@ const Tariff = () => {
             </Button>
             <div className="w-full relative flex items-center text-center justify-center">
                <div className="form relative bg-darkViolet p-[5%] rounded-[16px] shadow-2xl  w-[550px] h-[550px] text-center">
-                  <div className="text-md mb-5">
+                  <div className="text-md mb-5 droid">
                      Оставьте свои данные, и мы обязательно свяжемся с вами
                   </div>
-                  <form action="">
+                  <form className="droid" action="">
                      <input
                         type="text"
                         placeholder="Имя"
