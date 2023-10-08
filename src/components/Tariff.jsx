@@ -77,7 +77,12 @@ const Tariff = () => {
          className="bg-violet tarif bg-no-repeat bg-cover bg-center py-[10vh]"
       >
          <div className="wrapper">
-            <h1 className="text-xl">Тарифы</h1>
+            <h1 className="text-xl relative">
+               Программа
+               <div className="absolute left-10 -top-10 md:-top-[90px] text-ultra opacity-30">
+                  Программа
+               </div>
+            </h1>
             <p className="text-center text-lg mb-[5vh]">
                В эту таинственную ночь мы предлагаем вам следующие невероятные
                варианты размещения
@@ -141,7 +146,7 @@ const Tariff = () => {
                <TariffComponents />
             </div>
             <div className="flex flex-col items-center justify-center">
-               <div className="bg-yellow w-full  box-border mt-[10vh] droid p-[5%] yellow-box text-tarif shadow-xl flex flex-col md:flex-row justify-between rounded-[16px] min-h-[200px]">
+               <div className="bg-yellow w-full   box-border mt-[10vh] droid p-[5%] yellow-box text-tarif shadow-xl flex flex-col md:flex-row justify-between rounded-[16px] min-h-[200px]">
                   <div className="">
                      <h1 className="text-black font-bold">
                         Вы можете добавить дополнительное
@@ -154,7 +159,7 @@ const Tariff = () => {
                      </p>
                   </div>
 
-                  <ul className="text-black flex flex-col items-center justify-center text-md">
+                  <ul className="text-black flex flex-col items-center justify-center text-small">
                      <li>
                         Завтрак <span className="font-bold"> 700</span>
                      </li>{" "}

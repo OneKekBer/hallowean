@@ -1,7 +1,7 @@
 // import bg_hero from "./assets/";
 
 import Button from "../common/Button";
-
+import arrow from "../assets/arrow.png";
 const Hero = () => {
    return (
       <div
@@ -22,6 +22,7 @@ const Hero = () => {
             </div>
             <Button className=" bg-darkViolet text-pumpkin  ">
                Забронировать место
+               <img src={arrow} className="w-9 h-5" alt="" />
             </Button>
          </div>
       </div>

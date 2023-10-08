@@ -3,11 +3,13 @@ export default {
    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
    theme: {
       fontSize: {
-         tarif: "clamp(6px, 5vw, 24px)",
-         xl: "clamp(64px, 8vw, 90px)",
-         lg: "clamp(30px, 8vw, 40px)",
-         md: "clamp(10px, 5vw, 28px)",
+         ultra: "clamp(32px, 8vw, 128px)",
+         tarif: "clamp(6px, 2vw, 24px)",
+         xl: "clamp(20px, 8vw, 64px)",
+         lg: "clamp(15px, 8vw, 32px)",
+         md: "clamp(10px, 6vw, 28px)",
          sm: "clamp(10px, 8vw, 18px)",
+         small: "clamp(7px, 2vw, 30px)",
       },
       extend: {
          colors: {

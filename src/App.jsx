@@ -6,7 +6,7 @@ import Footer from "./common/Footer";
 
 function App() {
    return (
-      <div className="text-white text-center md:text-start">
+      <div className="text-white ">
          <Header />
          <Hero />
          <Programa />

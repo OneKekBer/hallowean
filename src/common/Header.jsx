@@ -9,9 +9,15 @@ const Header = () => {
             <div className="flex  py-5 justify-between">
                <div>Икша Кантри клуб</div>
                <ul className="md:flex hidden gap-10">
-                  <li>Программа</li>
-                  <li>Тарифы</li>
-                  <li>Связаться со мной</li>
+                  <li>
+                     <a href="#Programa">Программа</a>
+                  </li>
+                  <li>
+                     <a href="#Tariff">Тарифы</a>
+                  </li>
+                  <li>
+                     <a href="tel:+7 985 909‑12‑02">Связаться со мной</a>
+                  </li>
                </ul>
                <div
                   onClick={() => {
