@@ -76,7 +76,7 @@ const Tariff = () => {
    return (
       <div
          id="Tariff"
-         className="bg-violet tarif bg-no-repeat bg-cover bg-center py-[10vh]"
+         className="bg-violet tarif bg-no-repeat bg-cover bg-center py-[5vh]"
       >
          <div className="wrapper">
             <h1 className="text-xl relative">

@@ -9,7 +9,7 @@ export default {
          lg: "clamp(15px, 8vw, 32px)",
          md: "clamp(10px, 6vw, 28px)",
          sm: "clamp(10px, 8vw, 18px)",
-         small: "clamp(6px, 4vw, 20px)",
+         small: "clamp(6px, 4vw, 18px)",
       },
       extend: {
          colors: {

@@ -2,30 +2,17 @@ import pumpkin from "../assets/pumpkin.png";
 import bat from "../assets/bat.png";
 import cotel from "../assets/cotel.png";
 import arrow from "../assets/arrow.png";
+import down_arrow from "../assets/down_arrow.png";
 import Button from "./../common/Button";
-import { useRef } from "react";
-import swiper1 from "./../assets/swiper/1.png";
-import swiper2 from "./../assets/swiper/2.png";
-import swiper3 from "./../assets/swiper/3.png";
-import swiper4 from "./../assets/swiper/4.png";
-
-import scroll from "./../assets/scroll.png";
-import orange_scroll from "./../assets/orange_scroll.png";
-
-// import Swiper core and required modules
-import { Pagination, Navigation } from "swiper/modules";
-
-import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import ProgramaSwiper from "./ProgramaSwiper";
 
 export const Programa = () => {
-   const swiperRef = useRef();
-
    return (
       <div id="Programa" className="program bg-violet py-[10vh] pb-[20vh]">
          <div className="wrapper relative">
@@ -104,72 +91,15 @@ export const Programa = () => {
                   </div>
                </div>
             </div>
-
+            <ProgramaSwiper />
             <Button className="bg-darkViolet mx-auto mt-[40px] text-pumpkin">
                Забронировать место
                <img src={arrow} className="w-9 h-5" alt="" />
             </Button>
             <Button className="bg-pumpkin mx-auto text-darkViolet">
                Посмотреть тарифы
+               <img src={down_arrow} className="w-9 h-9" alt="" />
             </Button>
-
-            <div>
-               <Swiper
-                  // install Swiper modules
-                  modules={[Pagination, Navigation]}
-                  spaceBetween={50}
-                  loop={true}
-                  slidesPerView={1}
-                  pagination={{ clickable: true }}
-                  className="swiper h-[70vh] relative mt-10 rounded-lg "
-                  onBeforeInit={(swiper) => {
-                     swiperRef.current = swiper;
-                  }}
-               >
-                  <SwiperSlide>
-                     <img
-                        src={swiper1}
-                        className="w-full h-full object-cover aspect-video"
-                        alt=""
-                     />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                     <img
-                        src={swiper2}
-                        className="w-full h-full object-cover aspect-video"
-                        alt=""
-                     />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                     <img
-                        src={swiper3}
-                        className="w-full h-full object-cover aspect-video"
-                        alt=""
-                     />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                     <img
-                        src={swiper4}
-                        className="w-full h-full object-cover aspect-video"
-                        alt=""
-                     />
-                  </SwiperSlide>
-                  <div
-                     className="absolute md:block hidden top-1/2 transform -translate-y-1/2 z-10 right-10"
-                     onClick={() => swiperRef.current?.slideNext()}
-                  >
-                     <img src={scroll} className="w-[90px] h-[90px]" alt="" />
-                  </div>
-               </Swiper>
-               <div className="w-full flex md:hidden justify-end">
-                  <img
-                     src={orange_scroll}
-                     className="w-[50px] h-[50px]"
-                     onClick={() => swiperRef.current?.slideNext()}
-                     alt=""
-                  />
-               </div>
-            </div>
          </div>
       </div>
    );
