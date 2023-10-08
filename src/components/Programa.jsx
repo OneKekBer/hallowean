@@ -11,6 +11,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import ProgramaSwiper from "./ProgramaSwiper";
+import Reveal from "../common/Reveal";
 
 export const Programa = () => {
    return (
@@ -51,12 +52,13 @@ export const Programa = () => {
                         проведут игры и развлечения для детей, включая охоту за
                         сладостями и конкурс на лучший детский костюм
                      </h2>
-
-                     <img
-                        src={bat}
-                        className="absolute -bottom-[150px] -right-[20%] "
-                        alt=""
-                     />
+                     <Reveal scale={0.5}>
+                        <img
+                           src={bat}
+                           className="absolute -bottom-[150px] -right-[20%] "
+                           alt=""
+                        />
+                     </Reveal>
                   </div>
                </div>
 
@@ -66,6 +68,7 @@ export const Programa = () => {
                      src={cotel}
                      alt=""
                   />
+
                   <div className="bg-pumpkin relative rounded-[20px] p-[50px]">
                      <h2 className="text-md text-bold">Пятница, 28 октября</h2>
                      <h2 className="text-md text-bold">10:30 - 12:30</h2>
@@ -83,11 +86,13 @@ export const Programa = () => {
                         взрослых и шоу Зомби-бал. Костюмированный конкурс и
                         раздача призов
                      </h2>
-                     <img
-                        src={bat}
-                        className="absolute scale-50 -rotate-90 -bottom-[150px] -right-[20%] "
-                        alt=""
-                     />
+                     <Reveal scale={0.6}>
+                        <img
+                           src={bat}
+                           className="absolute scale-50 -rotate-90 -bottom-[150px] -right-[20%] "
+                           alt=""
+                        />
+                     </Reveal>
                   </div>
                </div>
             </div>

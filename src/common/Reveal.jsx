@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 
 // eslint-disable-next-line react/prop-types
-export const Reveal = ({ children, delay = 0.25 }) => {
+export const Reveal = ({ children, delay = 0.25, scale = 1 }) => {
    const ref = useRef(null);
    const isInView = useInView(ref, { once: true });
    const animation = useAnimation();
@@ -18,8 +18,8 @@ export const Reveal = ({ children, delay = 0.25 }) => {
       <div ref={ref}>
          <motion.div
             variants={{
-               hidden: { opacity: 0, y: 50 },
-               visible: { opacity: 1, y: 0 },
+               hidden: { opacity: 0, y: scale === 1 ? 50 : 0, scale: scale },
+               visible: { opacity: 1, y: 0, scale: 1 },
             }}
             initial="hidden"
             animate={animation}
