@@ -18,6 +18,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Druk Text Bold Trial";
+  overflow-x: hidden;
 }
 
 .hero {
@@ -27,7 +28,13 @@ body {
 .wrapper {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 20PX;
+  padding: 0 20px;
+
+
+}
+
+.swiper .swiper-pagination-bullet-active {
+  background-color: #FF7A00;
 
 }
 

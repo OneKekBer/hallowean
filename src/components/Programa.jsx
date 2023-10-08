@@ -3,6 +3,22 @@ import bat from "../assets/bat.png";
 import cotel from "../assets/cotel.png";
 import Button from "./../common/Button";
 
+import swiper1 from "./../assets/swiper/1.png";
+import swiper2 from "./../assets/swiper/2.png";
+import swiper3 from "./../assets/swiper/3.png";
+import swiper4 from "./../assets/swiper/4.png";
+
+// import Swiper core and required modules
+import { Pagination } from "swiper/modules";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
+
 export const Programa = () => {
    return (
       <div className="program bg-violet">
@@ -84,6 +100,48 @@ export const Programa = () => {
             <Button className="bg-pumpkin mx-auto text-darkViolet">
                Посмотреть тарифы
             </Button>
+
+            <div>
+               <Swiper
+                  // install Swiper modules
+                  modules={[Pagination]}
+                  spaceBetween={50}
+                  loop={true}
+                  slidesPerView={1}
+                  pagination={{ clickable: true }}
+                  className="swiper h-[60vh] mt-10 rounded-lg "
+               >
+                  <SwiperSlide>
+                     <img
+                        src={swiper1}
+                        className="w-full h-full object-cover aspect-video"
+                        alt=""
+                     />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                     <img
+                        src={swiper2}
+                        className="w-full h-full object-cover aspect-video"
+                        alt=""
+                     />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                     <img
+                        src={swiper3}
+                        className="w-full h-full object-cover aspect-video"
+                        alt=""
+                     />
+                  </SwiperSlide>
+                  <SwiperSlide>
+                     <img
+                        src={swiper4}
+                        className="w-full h-full object-cover aspect-video"
+                        alt=""
+                     />
+                  </SwiperSlide>
+                  ...
+               </Swiper>
+            </div>
          </div>
       </div>
    );
