@@ -2,6 +2,7 @@
 
 import Button from "../common/Button";
 import arrow from "../assets/arrow.png";
+import Reveal from "../common/Reveal";
 const Hero = () => {
    return (
       <div
@@ -10,16 +11,21 @@ const Hero = () => {
          // style={{ backgroundImage: bg_hero, backgroundRepeat: "no-repeat" }}
       >
          <div className="wrapper flex items-center min-h-[90vh] justify-center flex-col p-5">
-            <div className="text-lg mb-10">
-               <span className="text-pumpkin text-xl">HALLOWEEN</span>
-               <br /> в Икша Кантри Клубе!
-            </div>
-            <div className="text-md droid">
-               Хэллоуин – это один из самых ожидаемых праздников в Загородном
-               клубе Икра Кантри Клуб в Подмосковье! Каждый год клуб организует
-               уникальное и захватывающее мероприятие, чтобы погрузить своих
-               гостей в мистическую и веселую атмосферу этого праздника.
-            </div>
+            <Reveal delay={0.25}>
+               <div className="text-lg mb-10">
+                  <span className="text-pumpkin text-xl">HALLOWEEN</span>
+                  <br /> в Икша Кантри Клубе!
+               </div>
+            </Reveal>
+            <Reveal delay={0.5}>
+               <div className="text-md droid">
+                  Хэллоуин – это один из самых ожидаемых праздников в Загородном
+                  клубе Икра Кантри Клуб в Подмосковье! Каждый год клуб
+                  организует уникальное и захватывающее мероприятие, чтобы
+                  погрузить своих гостей в мистическую и веселую атмосферу этого
+                  праздника.
+               </div>
+            </Reveal>
             <Button className=" bg-darkViolet text-pumpkin  ">
                Забронировать место
                <img src={arrow} className="w-9 h-5" alt="" />
