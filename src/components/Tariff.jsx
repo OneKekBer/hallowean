@@ -146,7 +146,7 @@ const Tariff = () => {
                <TariffComponents />
             </div>
             <div className="flex flex-col items-center justify-center">
-               <div className="bg-yellow w-full   box-border mt-[10vh] droid p-[5%] yellow-box text-tarif shadow-xl flex flex-col md:flex-row justify-between rounded-[16px] min-h-[200px]">
+               <div className="bg-yellow w-full   box-border mt-[10vh] droid p-[5%] yellow-box text-tarif shadow-xl flex  justify-between rounded-[16px] min-h-[200px]">
                   <div className="">
                      <h1 className="text-black font-bold">
                         Вы можете добавить дополнительное

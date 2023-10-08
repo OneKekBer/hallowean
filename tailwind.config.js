@@ -4,7 +4,7 @@ export default {
    theme: {
       fontSize: {
          ultra: "clamp(32px, 8vw, 128px)",
-         tarif: "clamp(6px, 2vw, 24px)",
+         tarif: "clamp(6px, 4vw, 24px)",
          xl: "clamp(20px, 8vw, 64px)",
          lg: "clamp(15px, 8vw, 32px)",
          md: "clamp(10px, 6vw, 28px)",

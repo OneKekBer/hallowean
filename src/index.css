@@ -16,7 +16,9 @@
     url("https://db.onlinewebfonts.com/t/5b0ba2e20d3d7e3fc30b60595f3702c2.svg#Druk Text Bold Trial")format("svg");
 }
 
-
+html {
+  overflow-x: hidden;
+}
 
 body {
   margin: 0;
