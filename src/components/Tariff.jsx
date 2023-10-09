@@ -16,10 +16,10 @@ const Tariff = () => {
       >
          <div className="wrapper">
             <Reveal duration={1.5} variants={slideFromRight(-500)}>
-               <h1 className="text-xl relative">
-                  Программа
-                  <div className="absolute left-10 -top-10 md:-top-[90px] text-ultra opacity-30">
-                     Программа
+               <h1 className="text-xl tracking-widest relative">
+                  Тарифы
+                  <div className="absolute left-2 -top-[30px] md:-top-[70px] text-[64px] md:text-[128px]  opacity-10">
+                     Тарифы
                   </div>
                </h1>
                <p className="text-center text-lg droid mb-[5vh]">

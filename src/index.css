@@ -34,13 +34,16 @@ html {
   overflow-x: hidden;
 }
 
+.eng {
+  font-family: 'Druk Text Bold Trial' !important;
+}
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Druk';
   /* font-family: 'Druk Text Bold Trial'; */
-  letter-spacing: 4px;
+  letter-spacing: 4px !important;
   font-weight: 700;
   overflow-x: hidden;
   scroll-behavior: smooth;

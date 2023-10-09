@@ -19,8 +19,8 @@ function TariffComponents() {
                   <div className="absolute -left-5 -top-5 md:-top-10 text-xl">
                      01
                   </div>
-                  <h1 className="text-center text-lg font-bold text-violet">
-                     Тариф Волшебные Олимпийские
+                  <h1 className="text-center text-[15px] md:text-[32px] font-bold text-violet">
+                     &quot; Тариф Волшебные Олимпийские&quot;
                   </h1>
                   <div className="border flex-col md:flex-row mb-[2%] border-violet mx-5 p-5 border-solid rounded-lg flex justify-between">
                      <div className="text-tarif">
@@ -75,8 +75,8 @@ function TariffComponents() {
                   <div className="absolute -left-5 -top-5 md:-top-10 text-xl">
                      02
                   </div>
-                  <h1 className="text-center text-lg font-bold text-violet">
-                     Тариф Шале Чародеев
+                  <h1 className="text-center text-[15px] md:text-[32px] font-bold text-violet">
+                     &quot;Тариф Шале Чародеев&quot;
                   </h1>
                   <div className="border flex-col md:flex-row mb-[2%] border-violet mx-5 p-5 border-solid rounded-lg flex justify-between">
                      <div className="text-tarif">
@@ -129,8 +129,8 @@ function TariffComponents() {
                   <div className="absolute -left-5 -top-5 md:-top-10 text-xl">
                      03
                   </div>
-                  <h1 className="text-center text-lg font-bold text-violet">
-                     Тариф Коттеджные Заклинатели
+                  <h1 className="text-center text-[15px] md:text-[32px] font-bold text-violet">
+                     &quot;Тариф Коттеджные Заклинатели&quot;
                   </h1>
                   <div className="border flex-col md:flex-row mb-[2%] border-violet mx-5 p-5 border-solid rounded-lg flex justify-between">
                      <div className="text-tarif">
@@ -185,8 +185,8 @@ function TariffComponents() {
                   <div className="absolute -left-5 -top-5 md:-top-10 text-xl">
                      04
                   </div>
-                  <h1 className="text-center text-lg font-bold text-violet">
-                     Тариф Лесные Ведьмы
+                  <h1 className="text-center text-[15px] md:text-[32px] font-bold text-violet">
+                     &quot;Тариф Лесные Ведьмы&quot;
                   </h1>
                   <div className="border flex-col md:flex-row mb-[2%] border-violet mx-5 p-5 border-solid rounded-lg flex justify-between">
                      <div className="text-tarif">
@@ -242,8 +242,8 @@ function TariffComponents() {
                   <div className="absolute -left-5 -top-5 md:-top-10 text-xl">
                      05
                   </div>
-                  <h1 className="text-center text-lg font-bold text-violet">
-                     Тариф Дуплекс Загадок
+                  <h1 className="text-center text-[15px] md:text-[32px] font-bold text-violet">
+                     &quot;Тариф Дуплекс Загадок&quot;
                   </h1>
                   <div className="border flex-col md:flex-row mb-[2%] border-violet mx-5 p-5 border-solid rounded-lg flex justify-between">
                      <div className="text-tarif">

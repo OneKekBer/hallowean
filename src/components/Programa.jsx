@@ -19,9 +19,9 @@ export const Programa = () => {
       <div id="Programa" className="program bg-violet py-[10vh] pb-[10vh]">
          <div className="wrapper relative">
             <Reveal duration={1} variants={slideFromRight()}>
-               <h1 className="text-xl relative">
+               <h1 className="text-xl tracking-widest relative">
                   Программа
-                  <div className="absolute left-10 -top-10 md:-top-[90px] text-ultra opacity-30">
+                  <div className="absolute left-2 -top-[30px] md:-top-[70px] text-[64px] md:text-[128px]  opacity-10">
                      Программа
                   </div>
                </h1>
@@ -32,26 +32,32 @@ export const Programa = () => {
                <div className="grid grid-cols-1 place-items-center  md:grid-cols-2 gap-y-20 gap-10">
                   <div className="flex flex-col max-w-[600px] justify-center items-center">
                      <img
-                        className="md:w-[200px] w-[100px]  h-[100px] md:h-[200px] relative top-10 z-10"
+                        className="md:w-[200px] w-[100px]  h-[100px] md:h-[200px] relative top-5    md:top-10 z-10"
                         src={pumpkin}
                         alt=""
                      />
                      <div className="bg-pumpkin relative rounded-[20px] p-3 md:p-[50px]">
-                        <h2 className="text-md font-extrabold">
+                        <h2 className="md:text-[40px] text-[25px] font-extrabold">
                            Пятница, 27 октября
                         </h2>
-                        <h2 className="text-md text-bold">16:00 - 18:00</h2>
-                        <h2 className="text-md mb-6 droid font-light font-light">
+                        <h2 className=" md:text-[40px] text-[25px]  text-bold ">
+                           16:00 - 18:00
+                        </h2>
+                        <h2 className="text-md mb-6 droid font-light ">
                            Регистрация и заселение гостей
                         </h2>
-                        <h2 className="text-md text-bold">18:30 - 20:00</h2>
-                        <h2 className="text-md mb-6 droid font-light font-light">
+                        <h2 className=" md:text-[40px] text-[25px]  text-bold ">
+                           18:30 - 20:00
+                        </h2>
+                        <h2 className="text-md mb-6 droid font-light ">
                            {" "}
                            Ужин в стиле Хэллоуина с участием ведьм и зомби
                            (фуршет на каждой локации)
                         </h2>
-                        <h2 className="text-md text-bold">20:30 - 22:00 </h2>
-                        <h2 className="text-md mb-6 droid font-light font-light">
+                        <h2 className=" md:text-[40px] text-[25px]  text-bold ">
+                           20:30 - 22:00{" "}
+                        </h2>
+                        <h2 className="text-md mb-6 droid font-light ">
                            Вечеринка с живой музыкой и DJ в Шатре Аниматоры
                            проведут игры и развлечения для детей, включая охоту
                            за сладостями и конкурс на лучший детский костюм
@@ -68,27 +74,31 @@ export const Programa = () => {
 
                   <div className="flex flex-col  max-w-[600px] justify-center items-center">
                      <img
-                        className="md:w-[200px] w-[100px]  h-[100px] md:h-[200px] relative top-10   z-10"
+                        className="md:w-[200px] w-[100px]  h-[100px] md:h-[200px] relative top-5    md:top-10   z-10"
                         src={cotel}
                         alt=""
                      />
 
                      <div className="bg-pumpkin relative rounded-[20px] p-3 md:p-[50px]">
-                        <h2 className="text-md text-bold">
+                        <h2 className=" md:text-[40px] text-[25px]  text-bold ">
                            Пятница, 28 октября
                         </h2>
-                        <h2 className="text-md text-bold">10:30 - 12:30</h2>
+                        <h2 className=" md:text-[40px] text-[25px]  text-bold ">
+                           10:30 - 12:30
+                        </h2>
                         <h2 className="text-md  mb-6 droid font-light">
                            Мастер-класс по созданию тыквенных фигур для детей и
                            взрослых в шатре Ворожба и гадание для всех желающих
                         </h2>
-                        <h2 className="text-md text-bold">15:00 - 17:00</h2>
+                        <h2 className=" md:text-[40px] text-[25px]  text-bold ">
+                           15:00 - 17:00
+                        </h2>
                         <h2 className="text-md  mb-6 droid font-light">
                            Экскурсия по заброшенным местам Икшинского
                            водохранилища
                         </h2>
                         <h2 className="text-md ">20:30 - 22:00</h2>
-                        <h2 className="text-md text-bold  mb-6 droid font-light">
+                        <h2 className=" text-md font-light  mb-6 droid">
                            Вечеринка с тематическими коктейлями для детей и
                            взрослых и шоу Зомби-бал. Костюмированный конкурс и
                            раздача призов
