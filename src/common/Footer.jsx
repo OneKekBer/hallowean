@@ -55,7 +55,7 @@ const Footer = () => {
                <div className="md:flex  hidden justify-center gap-10">
                   <a href="#Programa">Программа</a>
                   <a href="#Tariff">Тарифы</a>
-                  <a href="tel:+7 985 909‑12‑02">Связаться со мной</a>
+                  <a href="tel:+7 (499) 505-50-31">Связаться со мной</a>
                </div>
             </div>
          </div>
