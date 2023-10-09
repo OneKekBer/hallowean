@@ -1,10 +1,5 @@
 import Button from "./../common/Button";
-// import bat from "../assets/bat.png";
-// import cat from "../assets/cat.png";
-// import spooky from "../assets/spooky.png";
-// import candy from "../assets/candy.png";
-// import hat from "../assets/hat.png";
-// import spooky2 from "../assets/spooky2.png";
+
 import food from "../assets/food.png";
 import boo from "../assets/boo.png";
 import arrow from "../assets/arrow.png";
@@ -12,70 +7,8 @@ import down_arrow from "../assets/down_arrow.png";
 import TariffComponents from "./TarrifComponents";
 import Reveal from "../common/Reveal";
 import { slideFromRight } from "../constants/motion";
-import { slideFromLeft } from "./../constants/motion";
-const Tariff = () => {
-   // const tariffs = [
-   //    {
-   //       title: "Тариф Волшебные Олимпийские",
-   //       people: "2-6 человек",
-   //       loaction: "Локация: Олимпийская деревня",
-   //       inclide: [
-   //          "Проживание с 27 по 29",
-   //          "Проживаниес 28 по 30",
-   //          "Торжественный ужин, участие во всех мероприятиях",
-   //       ],
-   //       num: "46,000",
-   //       img: cat,
-   //    },
-   //    {
-   //       title: "Тариф Шале Чародеев",
-   //       people: "6-10 человек",
-   //       loaction: "Локация:  Шале",
-   //       inclide: [
-   //          "Проживание  27, 28 ИЛИ 29 октября",
-   //          "Торжественный ужин, участие во всех мероприятиях",
-   //       ],
-   //       num: "55,000",
-   //       img: candy,
-   //    },
-   //    {
-   //       title: "Тариф Коттеджные Заклинатели",
-   //       people: "6-10 человек",
-   //       loaction: "Локация:  Коттедж",
-   //       inclide: [
-   //          "Проживание с 27 по 29",
-   //          "Проживаниес 28 по 30",
-   //          "Торжественный ужин, участие во всех мероприятиях",
-   //       ],
-   //       num: "70,000",
-   //       img: hat,
-   //    },
-   //    {
-   //       title: "Тариф Лесные Ведьмы",
-   //       loaction: "Локация:  Лесная Резиденция   ",
-   //       people: "6-10 человек",
-   //       inclide: [
-   //          "Проживание с 27 по 29",
-   //          "Проживание с 28 по 30",
-   //          "Торжественный ужин, участие во всех мероприятиях",
-   //       ],
-   //       num: "75,000",
-   //       img: spooky,
-   //    },
-   //    {
-   //       title: "Тариф  Дуплекс Загадок",
-   //       people: "6-10 человек",
-   //       loaction: "Локация:  Дуплекс",
-   //       inclide: [
-   //          "Проживание с 27 по 29",
-   //          "Проживание с 28 по 30",
-   //          "Торжественный ужин, участие во всех мероприятиях",
-   //       ],
-   //       num: "82,600",
-   //       img: spooky2,
-   //    },
-   // ];
 
+const Tariff = () => {
    return (
       <div
          id="Tariff"

@@ -14,8 +14,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const ProgramaSwiper = () => {
    const swiperRef = useRef();
    return (
-      <div>
-         <div className="mt-[10vh] border-y-2 py-5 border-pumpkin">
+      <div className="">
+         <div className=" border-y-2 border-pumpkin pb-10 w-full h-full mt-[10vh]">
             <Swiper
                // install Swiper modules
                modules={[Pagination, Navigation]}
@@ -23,7 +23,7 @@ const ProgramaSwiper = () => {
                loop={true}
                slidesPerView={1}
                pagination={{ clickable: true }}
-               className="swiper w-full h-full aspect-video relative mt-10 rounded-lg "
+               className="swiper  w-full h-full aspect-video relative mt-10 rounded-lg "
                onBeforeInit={(swiper) => {
                   swiperRef.current = swiper;
                }}
@@ -65,7 +65,7 @@ const ProgramaSwiper = () => {
                </div>
             </Swiper>
          </div>
-         <div className="w-full flex md:hidden justify-end">
+         <div className="w-full mt-5 flex md:hidden justify-end">
             <img
                src={orange_scroll}
                className="w-[50px] h-[50px]"

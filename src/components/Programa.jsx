@@ -29,7 +29,7 @@ export const Programa = () => {
                   Программа для празднования Хэллоуина в загородном клубе Икша
                   Кантри Клаб с 27 по 29 октября:
                </p>
-               <div className="grid grid-cols-1 place-items-center  md:grid-cols-2 gap-10">
+               <div className="grid grid-cols-1 place-items-center  md:grid-cols-2 gap-y-20 gap-10">
                   <div className="flex flex-col max-w-[600px] justify-center items-center">
                      <img
                         className="w-[200px]  h-[200px] relative top-10 z-10"
