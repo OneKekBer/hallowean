@@ -26,7 +26,7 @@ export const Programa = () => {
                   </div>
                </h1>
                <p className="text-center text-lg droid">
-                  Программа для празднования Хэллоуина в загородном клубе Икша
+                  Программа для празднования Хэллоуина в загородном клабе Икша
                   Кантри Клаб с 27 по 29 октября:
                </p>
                <div className="grid grid-cols-1 place-items-center  md:grid-cols-2 gap-y-20 gap-10">

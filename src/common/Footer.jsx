@@ -19,7 +19,7 @@ const Footer = () => {
          <div className="wrapper mt-20 text-grey ">
             <div className="flex gap-5 py-5 justify-between">
                <div className="flex w-full items-center justify-between md:justify-start gap-5">
-                  <div>Икша Кантри клуб 2023 </div>
+                  <div>Икша Кантри клаб 2023 </div>
                   <div className="flex fixed bottom-5 right-5 flex-col gap-5 md:flex-row">
                      <a
                         target="_blank"
