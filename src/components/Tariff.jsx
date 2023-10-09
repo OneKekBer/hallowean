@@ -1,5 +1,5 @@
 import Button from "./../common/Button";
-
+import { Link as ScrollLink } from "react-scroll";
 import food from "../assets/food.png";
 import boo from "../assets/boo.png";
 import arrow from "../assets/arrow.png";
@@ -59,13 +59,22 @@ const Tariff = () => {
                </div>
                <img src={food} alt="" />
             </div>
-            <Button className="bg-pumpkin btn-pum mb-[10vh] text-white mx-auto">
-               Оставить заявку
-               <img src={down_arrow} className="w-7 h-7" alt="" />
-            </Button>
+            <ScrollLink
+               to="Form"
+               smooth={true}
+               duration={1000} // Длительность анимации скролла (в миллисекундах)
+            >
+               <Button className="bg-pumpkin btn-pum mb-[10vh] text-white mx-auto">
+                  Оставить заявку
+                  <img src={down_arrow} className="w-7 h-7" alt="" />
+               </Button>
+            </ScrollLink>
             <div className="w-full relative flex items-center text-center justify-center">
                {/* <Reveal duration={1.5} variants={slideFromLeft()}> */}
-               <div className="form relative bg-darkViolet p-[5%] rounded-[16px] shadow-2xl  w-[550px] h-[550px] text-center">
+               <div
+                  name="Form"
+                  className="form relative bg-darkViolet p-[5%] rounded-[16px] shadow-2xl  w-[550px] h-[550px] text-center"
+               >
                   <div className="text-md mb-5 droid">
                      Оставьте свои данные, и мы обязательно свяжемся с вами
                   </div>

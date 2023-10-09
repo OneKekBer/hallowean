@@ -5,6 +5,8 @@ import arrow from "../assets/arrow.png";
 import down_arrow from "../assets/down_arrow.png";
 import Button from "./../common/Button";
 
+import { Link as ScrollLink } from "react-scroll";
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -122,10 +124,16 @@ export const Programa = () => {
                   Забронировать место
                   <img src={arrow} className="w-9 h-5" alt="" />
                </Button>
-               <Button className="bg-pumpkin mx-auto text-darkViolet">
-                  Посмотреть тарифы
-                  <img src={down_arrow} className="w-6 h-8" alt="" />
-               </Button>
+               <ScrollLink
+                  to="Tariff"
+                  smooth={true}
+                  duration={1000} // Длительность анимации скролла (в миллисекундах)
+               >
+                  <Button className="bg-pumpkin mx-auto text-darkViolet">
+                     Посмотреть тарифы
+                     <img src={down_arrow} className="w-6 h-8" alt="" />
+                  </Button>
+               </ScrollLink>
             </Reveal>
          </div>
       </div>

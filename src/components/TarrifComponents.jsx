@@ -60,6 +60,7 @@ function TariffComponents() {
                         alt=""
                      />
                   </div>
+
                   <Button className="absolute right-0 bg-darkViolet text-pumpkin -bottom-5">
                      Забронировать место
                      <img src={arrow} className="w-9 h-5" alt="" />

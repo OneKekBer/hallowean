@@ -3,6 +3,7 @@
 import Button from "../common/Button";
 import arrow from "../assets/arrow.png";
 import Reveal from "../common/Reveal";
+import { Link as ScrollLink } from "react-scroll";
 const Hero = () => {
    return (
       <div
@@ -26,10 +27,16 @@ const Hero = () => {
                   праздника.
                </div>
             </Reveal>
-            <Button className=" bg-darkViolet text-pumpkin  ">
-               Забронировать место
-               <img src={arrow} className="w-9 h-5" alt="" />
-            </Button>
+            <ScrollLink
+               to="Tariff"
+               smooth={true}
+               duration={1000} // Длительность анимации скролла (в миллисекундах)
+            >
+               <Button className=" bg-darkViolet text-pumpkin  ">
+                  Забронировать место
+                  <img src={arrow} className="w-9 h-5" alt="" />
+               </Button>
+            </ScrollLink>
          </div>
       </div>
    );
