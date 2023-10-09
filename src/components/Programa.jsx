@@ -120,10 +120,16 @@ export const Programa = () => {
                   </div>
                </div>
                <ProgramaSwiper />
-               <Button className="bg-darkViolet mx-auto mt-[40px] text-pumpkin">
-                  Забронировать место
-                  <img src={arrow} className="w-9 h-5" alt="" />
-               </Button>
+               <ScrollLink
+                  to="Form"
+                  smooth={true}
+                  duration={1000} // Длительность анимации скролла (в миллисекундах)
+               >
+                  <Button className="mx-auto bg-darkViolet text-pumpkin">
+                     Забронировать место
+                     <img src={arrow} className="w-9 h-5" alt="" />
+                  </Button>
+               </ScrollLink>
                <ScrollLink
                   to="Tariff"
                   smooth={true}

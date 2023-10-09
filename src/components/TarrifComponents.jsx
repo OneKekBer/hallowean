@@ -8,6 +8,7 @@ import Button from "../common/Button";
 import arrow from "../assets/arrow.png";
 import { Reveal } from "./../common/Reveal";
 import { slideFromRight, slideFromLeft } from "../constants/motion";
+import { Link as ScrollLink } from "react-scroll";
 
 function TariffComponents() {
    return (
@@ -60,11 +61,16 @@ function TariffComponents() {
                         alt=""
                      />
                   </div>
-
-                  <Button className="absolute right-0 bg-darkViolet text-pumpkin -bottom-5">
-                     Забронировать место
-                     <img src={arrow} className="w-9 h-5" alt="" />
-                  </Button>
+                  <ScrollLink
+                     to="Form"
+                     smooth={true}
+                     duration={1000} // Длительность анимации скролла (в миллисекундах)
+                  >
+                     <Button className="absolute right-0 bg-darkViolet text-pumpkin -bottom-5">
+                        Забронировать место
+                        <img src={arrow} className="w-9 h-5" alt="" />
+                     </Button>
+                  </ScrollLink>
                </div>
             </Reveal>
          </div>
@@ -116,10 +122,16 @@ function TariffComponents() {
                         alt=""
                      />
                   </div>
-                  <Button className="absolute right-0 bg-darkViolet text-pumpkin -bottom-5">
-                     Забронировать место
-                     <img src={arrow} className="w-9 h-5" alt="" />
-                  </Button>
+                  <ScrollLink
+                     to="Form"
+                     smooth={true}
+                     duration={1000} // Длительность анимации скролла (в миллисекундах)
+                  >
+                     <Button className="absolute right-0 bg-darkViolet text-pumpkin -bottom-5">
+                        Забронировать место
+                        <img src={arrow} className="w-9 h-5" alt="" />
+                     </Button>
+                  </ScrollLink>
                </div>
             </Reveal>
          </div>
@@ -171,10 +183,16 @@ function TariffComponents() {
                         alt=""
                      />
                   </div>
-                  <Button className="absolute right-0 bg-darkViolet text-pumpkin -bottom-5">
-                     Забронировать место
-                     <img src={arrow} className="w-9 h-5" alt="" />
-                  </Button>
+                  <ScrollLink
+                     to="Form"
+                     smooth={true}
+                     duration={1000} // Длительность анимации скролла (в миллисекундах)
+                  >
+                     <Button className="absolute right-0 bg-darkViolet text-pumpkin -bottom-5">
+                        Забронировать место
+                        <img src={arrow} className="w-9 h-5" alt="" />
+                     </Button>
+                  </ScrollLink>
                </div>
             </Reveal>
          </div>
@@ -227,10 +245,16 @@ function TariffComponents() {
                         alt=""
                      />
                   </div>
-                  <Button className="absolute right-0 bg-darkViolet text-pumpkin -bottom-5">
-                     Забронировать место
-                     <img src={arrow} className="w-9 h-5" alt="" />
-                  </Button>
+                  <ScrollLink
+                     to="Form"
+                     smooth={true}
+                     duration={1000} // Длительность анимации скролла (в миллисекундах)
+                  >
+                     <Button className="absolute right-0 bg-darkViolet text-pumpkin -bottom-5">
+                        Забронировать место
+                        <img src={arrow} className="w-9 h-5" alt="" />
+                     </Button>
+                  </ScrollLink>
                </div>
             </Reveal>
          </div>
@@ -284,10 +308,16 @@ function TariffComponents() {
                         alt=""
                      />
                   </div>
-                  <Button className="absolute right-0 bg-darkViolet text-pumpkin -bottom-5">
-                     Забронировать место
-                     <img src={arrow} className="w-9 h-5" alt="" />
-                  </Button>
+                  <ScrollLink
+                     to="Form"
+                     smooth={true}
+                     duration={1000} // Длительность анимации скролла (в миллисекундах)
+                  >
+                     <Button className="absolute right-0 bg-darkViolet text-pumpkin -bottom-5">
+                        Забронировать место
+                        <img src={arrow} className="w-9 h-5" alt="" />
+                     </Button>
+                  </ScrollLink>
                </div>
             </Reveal>
          </div>
