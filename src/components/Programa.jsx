@@ -59,7 +59,7 @@ export const Programa = () => {
                         <Reveal variants={scale()}>
                            <img
                               src={bat}
-                              className="absolute -bottom-[150px] -right-[20%] "
+                              className="absolute -bottom-[90px] -right-[20%] "
                               alt=""
                            />
                         </Reveal>
@@ -68,7 +68,7 @@ export const Programa = () => {
 
                   <div className="flex flex-col  max-w-[600px] justify-center items-center">
                      <img
-                        className="w-[200px]  h-[200px] relative top-10 z-10"
+                        className="w-[200px]  h-[200px] relative top-10   z-10"
                         src={cotel}
                         alt=""
                      />

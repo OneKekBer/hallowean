@@ -20,7 +20,6 @@ export const Reveal = ({
    useEffect(() => {
       if (isInView) {
          animation.start("visible");
-         console.log("вижу его!");
       }
    }, [isInView, animation]);
 
