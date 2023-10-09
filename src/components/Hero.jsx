@@ -7,7 +7,7 @@ const Hero = () => {
    return (
       <div
          id="Hero"
-         className={`hero min-h-[90vh] text-center gap-5  bg-no-repeat bg-cover `}
+         className={`hero min-h-[90vh] text-center gap-5 bg-center bg-no-repeat bg-cover `}
          // style={{ backgroundImage: bg_hero, backgroundRepeat: "no-repeat" }}
       >
          <div className="wrapper flex items-center min-h-[90vh] justify-center flex-col p-5">
