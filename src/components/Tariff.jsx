@@ -12,7 +12,7 @@ const Tariff = () => {
    return (
       <div
          id="Tariff"
-         className="bg-violet tarif bg-no-repeat bg-cover pb-[10vh]  bg-center py-[5vh]"
+         className="bg-violet tarif bg-no-repeat bg-cover pb-[10vh]  bg-center py-[7vh]"
       >
          <div className="wrapper">
             <Reveal duration={1.5} variants={slideFromRight(-500)}>
