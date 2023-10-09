@@ -46,7 +46,7 @@ const Footer = () => {
                         }}
                         initial="initial"
                         animate="animate"
-                        href="tel:+7 985 909‑12‑02"
+                        href="tel:+7 (499) 505-50-31"
                      >
                         <img className="w-9 h-9 z-10" src={phone} alt="" />
                      </motion.a>
