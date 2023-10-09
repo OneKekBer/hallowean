@@ -4,6 +4,7 @@ import close from "./../assets/close.png";
 import { AnimatePresence, motion } from "framer-motion";
 import Reveal from "./Reveal";
 import { opacity } from "../constants/motion";
+import { Link as ScrollLink } from "react-scroll";
 
 const menuVars = {
    initial: {
@@ -49,8 +50,8 @@ const navVars = {
 };
 
 const links = [
-   { title: "Программа", link: "#Programa" },
-   { title: "Тарифы", link: "#Tariff" },
+   { title: "Программа", link: "Programa" },
+   { title: "Тарифы", link: "Tariff" },
    { title: "Связаться со мной", link: "tel:+7 985 909‑12‑02" },
 ];
 // eslint-disable-next-line react/prop-types
@@ -80,11 +81,18 @@ const Header = ({ toggleMenu, isMenuOpen }) => {
                               return (
                                  <motion.li
                                     onClick={toggleMenu}
-                                    className="text-md"
+                                    className="text-md cursor-pointer"
                                     variants={navVars}
                                     key={i}
                                  >
-                                    <a href={link.link}>{link.title}</a>
+                                    <ScrollLink
+                                       onClick={toggleMenu}
+                                       to={link.link}
+                                       smooth={true}
+                                       duration={1000} // Длительность анимации скролла (в миллисекундах)
+                                    >
+                                       {link.title}
+                                    </ScrollLink>
                                  </motion.li>
                               );
                            })}
@@ -98,8 +106,14 @@ const Header = ({ toggleMenu, isMenuOpen }) => {
                      <ul className="md:flex hidden gap-10">
                         {links.map((link, i) => {
                            return (
-                              <li key={i}>
-                                 <a href={link.link}>{link.title}</a>
+                              <li key={i} className="cursor-pointer">
+                                 <ScrollLink
+                                    to={link.link}
+                                    smooth={true}
+                                    duration={1000} // Длительность анимации скролла (в миллисекундах)
+                                 >
+                                    {link.title}
+                                 </ScrollLink>
                               </li>
                            );
                         })}

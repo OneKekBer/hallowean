@@ -12,6 +12,7 @@ const Tariff = () => {
    return (
       <div
          id="Tariff"
+         name="Tariff"
          className="bg-violet tarif bg-no-repeat bg-cover pb-[10vh]  bg-center py-[7vh]"
       >
          <div className="wrapper">

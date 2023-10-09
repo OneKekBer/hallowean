@@ -16,7 +16,11 @@ import { scale, slideFromRight } from "../constants/motion";
 
 export const Programa = () => {
    return (
-      <div id="Programa" className="program bg-violet py-[10vh] pb-[10vh]">
+      <div
+         id="Programa"
+         name="Programa"
+         className="program bg-violet py-[10vh] pb-[10vh]"
+      >
          <div className="wrapper relative">
             <Reveal duration={1} variants={slideFromRight()}>
                <h1 className="text-xl tracking-widest relative">
