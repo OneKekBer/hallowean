@@ -15,7 +15,9 @@ function App() {
          <Header toggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
          <div className={`${isMenuOpen ? "blur-sm" : ""}`}>
             <Hero />
+
             <Programa />
+
             <Tariff />
             <Footer />
          </div>

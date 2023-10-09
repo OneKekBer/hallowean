@@ -24,6 +24,14 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Druk';
+  src: url('../src/fonts/druktextwidecyr-bold.otf') format('otf');
+  /* Добавьте другие форматы шрифта, если необходимо */
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -55,7 +63,7 @@ body {
 }
 
 .hero {
-  background-image: url('./assets/bg.png');
+  background-image: url('./assets/bg.jpg');
 
 }
 

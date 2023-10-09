@@ -28,7 +28,11 @@ const Footer = () => {
                      >
                         <img className="w-9 h-9 z-10" src={inst} alt="" />
                      </a>
-                     <a href="tel:+7 (499) 505-50-31">
+                     <a
+                        href="https://wa.me/79859091202"
+                        target="_blank"
+                        rel="noreferrer"
+                     >
                         <img className="w-9 h-9 z-10" src={what} alt="" />
                      </a>
                      <motion.a
