@@ -94,7 +94,7 @@ const Header = ({ toggleMenu, isMenuOpen }) => {
                )}
                <Reveal duration={2} variants={opacity()}>
                   <div className="flex  py-5 justify-between">
-                     <div>Икша Кантри клаб</div>
+                     <div>Икша Кантри Kлаб</div>
                      <ul className="md:flex hidden gap-10">
                         {links.map((link, i) => {
                            return (
