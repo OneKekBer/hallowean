@@ -85,7 +85,6 @@ const Tariff = () => {
                      </Button>
                   </form>
                </div>
-               {/* </Reveal> */}
 
                <img src={boo} className="absolute right-0 -bottom-20" alt="" />
             </div>

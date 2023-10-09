@@ -5,9 +5,9 @@ export default {
       fontSize: {
          ultra: "clamp(48px, 10vw, 128px)",
          tarif: "clamp(6px, 4vw, 24px)",
-         xl: "clamp(50px, 8vw, 80px)",
-         lg: "clamp(15px, 8vw, 32px)",
-         md: "clamp(10px, 6vw, 28px)",
+         xl: "clamp(40px, 8vw, 80px)",
+         lg: "clamp(3px, 3vw, 32px)",
+         md: "clamp(10px, 4vw, 28px)",
          sm: "clamp(10px, 8vw, 18px)",
          small: "clamp(6px, 4vw, 18px)",
       },

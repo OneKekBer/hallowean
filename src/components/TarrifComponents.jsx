@@ -165,7 +165,7 @@ function TariffComponents() {
                   </div>
                   <div>
                      <img
-                        className="absolute top-20 rotate-45 -left-10 h-[70px] w-[90px] md:w-[170px] md:h-[140px] "
+                        className="absolute top-[100px] rotate-45 -left-10 h-[70px] w-[90px] md:w-[170px] md:h-[140px] "
                         src={bat}
                         alt=""
                      />

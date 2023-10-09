@@ -18,7 +18,7 @@
 
 @font-face {
   font-family: 'Druk';
-  src: url('../src/fonts/DrukCyr-Medium.woff') format('woff');
+  src: url('../src/fonts/DrukCyr-Bold.woff2') format('woff2');
   /* Добавьте другие форматы шрифта, если необходимо */
   font-weight: normal;
   font-style: normal;
@@ -39,7 +39,9 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Druk';
-  letter-spacing: 2px;
+  /* font-family: 'Druk Text Bold Trial'; */
+  letter-spacing: 4px;
+  font-weight: 700;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }

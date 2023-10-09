@@ -12,7 +12,7 @@ const Hero = () => {
       >
          <div className="wrapper flex items-center min-h-[90vh] justify-center flex-col p-5">
             <Reveal delay={0.25}>
-               <div className="text-lg mb-10">
+               <div className="text-[20px] font-light md:text-[30px] mb-10">
                   <span className="text-pumpkin text-xl">HALLOWEEN</span>
                   <br /> в Икша Кантри Клубе!
                </div>
