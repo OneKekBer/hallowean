@@ -11,7 +11,7 @@ const Hero = () => {
          className={`hero min-h-[90vh]  text-center gap-5 bg-center bg-no-repeat bg-cover `}
          // style={{ backgroundImage: bg_hero, backgroundRepeat: "no-repeat" }}
       >
-         <div className="wrapper flex items-center min-h-[90vh] justify-center flex-col p-5">
+         <div className="wrapper window bg-opacity-60   flex items-center  min-h-[90vh] justify-center flex-col p-10">
             <Reveal delay={0.25}>
                <div className="text-[20px] font-light  md:text-[30px] mb-10">
                   <span className="text-pumpkin eng text-xl">HALLOWEEN</span>

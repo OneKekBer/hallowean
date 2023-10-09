@@ -63,11 +63,27 @@ body {
 }
 
 .hero {
+  background-image: url('./assets/bg.jpg');
+
+}
+
+.hero {
 
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./assets/bg.jpg');
 
 
 }
+
+/* 
+.window {
+  position: relative;
+ 
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./assets/window.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+} */
+
 
 .wrapper {
   max-width: 1200px;
